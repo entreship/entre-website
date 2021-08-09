@@ -1,0 +1,8 @@
+/* *{
+    border: 0.2px red solid !important;
+} */
+
+body{
+    background: #19181F url(./Assets/overlay.png);
+    background-size: cover;
+}
