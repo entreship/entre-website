@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
         />
       </svg>
     
-      <footer className="footer bg-white pt-1 w-full z-30">
+      <footer className="footer bg-white pt-1 w-full z-30" id="contact">
         <div className="container mx-auto px-6">
           <div className="">
             <div className="flex flex-col md:flex-row justify-between">
