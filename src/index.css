@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #19181f;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.text-grad {
+  background-image: linear-gradient(45deg, #b878ea, #f5aed3, #dda8fc);
+  background-size: 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.gradient-button {
+  background-image: linear-gradient(#BE30FB, #D47AFE);
+}
+
+.gradient-text {
+  background-image: linear-gradient(45deg, #9A38E5, #F461AE, #B955F4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.hero-section {
+  background: url('/Assets/bg.png');
+  background-size: cover;
+}
+
+.about-section {
+  background-image: url('/Assets/bg2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
