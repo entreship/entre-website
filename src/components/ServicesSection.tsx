@@ -80,7 +80,7 @@ const ServicesSection: React.FC = () => {
             <p className="ring-2 ring-white rounded-full mr-4 p-2">#LiveHelp</p>
             <p className="ring-2 ring-white rounded-full mr-4 p-2">#Mentorship</p>
             <p className="ring-2 ring-white rounded-full mr-4 p-2">#DoubtSolving</p>
-          </p>
+          </div>
           <p>
             A program that provides: - 24/7 guidance through live sessions, phone calls and doubts channel. 
             <br /><br /> 
