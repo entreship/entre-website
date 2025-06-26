@@ -3,9 +3,7 @@ import Navbar from './Navbar'
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="hero-section flex flex-col items-center h-screen w-full justify-between px-10 pt-6">
-      <Navbar />
-      
+    <div className="hero-section flex flex-col items-center h-screen w-full justify-center px-10 pt-20">
       <div className="flex flex-row w-full h-full items-center justify-between mb-44 mt-16">
         <div className="flex flex-col">
           <p className="text-6xl text-white font-medium leading-none my-3 text-grad h-32">
@@ -19,11 +17,11 @@ const HeroSection: React.FC = () => {
           </p>
           <div className="flex flex-row items-center text-white py-4">
             <a href="https://forms.gle/LckgYhsF4vhVUPsK7" target="_blank" rel="noopener noreferrer">
-              <button className="flex flex-row items-center cursor-pointer rounded-full p-2 px-4 mr-4 gradient-button">
+              <button className="flex flex-row items-center cursor-pointer rounded-full p-2 px-4 mr-4 gradient-button hover:scale-105 transition-transform duration-300">
                 <p className="cursor-pointer">Get Started</p>
               </button>
             </a>
-            <a href="#services" className="border-4 rounded-full p-2 px-4 mr-4">
+            <a href="#services" className="border-4 rounded-full p-2 px-4 mr-4 hover:bg-white/10 transition-all duration-300">
               Explore More
             </a>
           </div>  

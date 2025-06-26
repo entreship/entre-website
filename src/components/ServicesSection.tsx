@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServicesSection: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen w-full py-10" id="services">
+    <div className="flex flex-col items-center justify-center min-h-screen w-full py-10 pt-20" id="services">
       <div className="text-6xl text-white text-grad font-bold h-24">
         <p>Why EntreShip?</p>
       </div>
@@ -80,7 +80,7 @@ const ServicesSection: React.FC = () => {
             <p className="ring-2 ring-white rounded-full mr-4 p-2">#LiveHelp</p>
             <p className="ring-2 ring-white rounded-full mr-4 p-2">#Mentorship</p>
             <p className="ring-2 ring-white rounded-full mr-4 p-2">#DoubtSolving</p>
-          </div>
+          </p>
           <p>
             A program that provides: - 24/7 guidance through live sessions, phone calls and doubts channel. 
             <br /><br /> 

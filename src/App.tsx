@@ -9,6 +9,7 @@ import ScrollToTop from './components/ScrollToTop'
 function App() {
   return (
     <div className="flex flex-col items-center font-montserrat">
+      <Navbar />
       <HeroSection />
       <AboutSection />
       <ServicesSection />

@@ -13,7 +13,7 @@ const AboutSection: React.FC = () => {
       </svg>
       
       <div 
-        className="about-section flex flex-col items-center bg-white px-20 h-screen w-full -mb-2 justify-center"
+        className="about-section flex flex-col items-center bg-white px-20 h-screen w-full -mb-2 justify-center pt-20"
         id="about"
       >
         <div className="flex flex-row w-full">

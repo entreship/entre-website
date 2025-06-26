@@ -71,3 +71,30 @@ body {
 section {
   scroll-margin-top: 80px;
 }
+
+/* Glassmorphism effect for sticky navbar */
+@supports (backdrop-filter: blur(10px)) {
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* Fallback for browsers that don't support backdrop-filter */
+@supports not (backdrop-filter: blur(10px)) {
+  .backdrop-blur-md {
+    background: rgba(25, 24, 31, 0.85);
+  }
+}
+
+/* Enhanced button hover effects */
+.gradient-button:hover {
+  box-shadow: 0 8px 25px rgba(190, 48, 251, 0.4);
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
