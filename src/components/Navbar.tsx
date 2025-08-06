@@ -1,70 +1,147 @@
 import React, { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import { Link, useLocation } from 'react-router-dom'
+import { Menu, X } from 'lucide-react'
+import GradientButton from './common/GradientButton'
 
 const Navbar: React.FC = () => {
-  const [activeSection, setActiveSection] = useState('home')
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'services', 'contact']
-      const scrollPosition = window.scrollY + 100 // Offset for better detection
-
-      // Check if page is scrolled for sticky background
       setIsScrolled(window.scrollY > 50)
-
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = document.getElementById(sections[i])
-        if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(sections[i])
-          break
-        }
-      }
     }
 
     window.addEventListener('scroll', handleScroll)
-    handleScroll() // Check initial position
-
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navItems = [
-    { id: 'home', label: 'Home', href: '#home' },
-    { id: 'about', label: 'About Us', href: '#about' },
-    { id: 'services', label: 'Services', href: '#services' },
-    { id: 'contact', label: 'Contact Us', href: '#contact' }
+  const navItems = location.pathname === '/' ? [
+    { label: 'Home', href: '#home' },
+    { label: 'How It Works', href: '#how-it-works' },
+    { label: 'Ecosystem', href: '#ecosystem' },
+    { label: 'Features', href: '#features' },
+    { label: 'Success Stories', href: '#testimonials' }
+  ] : [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
+    { label: 'Careers', href: '/careers' }
   ]
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
-        isScrolled 
-          ? 'backdrop-blur-md bg-white/10 border-b border-white/20 shadow-lg' 
-          : 'bg-transparent'
+    <motion.nav
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'glass py-4' : 'bg-transparent py-6'
       }`}
     >
-      <div
-        id="home"
-        className="flex flex-row w-full py-4 px-10 justify-between items-center navbar"
-      >
-        <img src="/Assets/logo.png" alt="logo" className="h-8 object-contain" />
-        <div className="flex flex-row gap-6 text-white font-semibold text-lg relative">
-          {navItems.map((item) => (
-            <a
-              key={item.id}
-              href={item.href}
-              className={`relative px-3 py-2 transition-all duration-300 hover:text-gray-200 rounded-lg hover:bg-white/10 ${
-                activeSection === item.id ? 'text-white' : 'text-gray-300'
-              }`}
+      <div className="max-width section-padding">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <Link to="/">
+            <motion.div
+              className="flex items-center"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
-              {item.label}
-              {activeSection === item.id && (
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400 transform transition-all duration-300 ease-out rounded-full"></div>
-              )}
-            </a>
-          ))}
+              <img 
+                src="/Assets/logo.png" 
+                alt="EntreShip Logo" 
+                className="h-8 object-contain"
+              />
+            </motion.div>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center gap-8">
+            {navItems.map((item, index) => (
+              item.href.startsWith('#') ? (
+                <motion.a
+                  key={item.label}
+                  href={item.href}
+                  className="text-gray-300 hover:text-white transition-colors"
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  whileHover={{ y: -2 }}
+                >
+                  {item.label}
+                </motion.a>
+              ) : (
+                <Link key={item.label} to={item.href}>
+                  <motion.span
+                    className="text-gray-300 hover:text-white transition-colors inline-block"
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    whileHover={{ y: -2 }}
+                  >
+                    {item.label}
+                  </motion.span>
+                </Link>
+              )
+            ))}
+          </div>
+
+          {/* CTA Button */}
+          <div className="hidden lg:block">
+            <GradientButton href={location.pathname === '/' ? '#cta' : '/#cta'} size="sm">
+              Get Started
+            </GradientButton>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="lg:hidden text-white p-2"
+          >
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        <motion.div
+          initial={false}
+          animate={{
+            height: isMobileMenuOpen ? 'auto' : 0,
+            opacity: isMobileMenuOpen ? 1 : 0
+          }}
+          transition={{ duration: 0.3 }}
+          className="lg:hidden overflow-hidden"
+        >
+          <div className="py-4 space-y-4">
+            {navItems.map((item) => (
+              item.href.startsWith('#') ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="block text-gray-300 hover:text-white transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="block text-gray-300 hover:text-white transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              )
+            ))}
+            <GradientButton href={location.pathname === '/' ? '#cta' : '/#cta'} size="sm" className="w-full">
+              Get Started
+            </GradientButton>
+          </div>
+        </motion.div>
       </div>
-    </nav>
+    </motion.nav>
   )
 }
 
