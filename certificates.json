@@ -1,0 +1,58 @@
+{
+  "certificates": {
+    "ENTR2024001": {
+      "certificateId": "ENTR2024001",
+      "studentName": "Rahul Sharma",
+      "college": "Indian Institute of Technology, Delhi",
+      "role": "Full Stack Developer Intern",
+      "startDate": "2024-06-01",
+      "endDate": "2024-08-31",
+      "duration": "3 months",
+      "skills": ["React", "Node.js", "MongoDB", "TypeScript"],
+      "projectName": "E-Commerce Platform Development",
+      "projectClient": "TechVentures Pvt. Ltd.",
+      "performanceRating": 5,
+      "feedback": "Rahul demonstrated exceptional technical skills and leadership qualities during his internship. He successfully led the development of key features and mentored junior team members. His innovative approach to problem-solving and commitment to code quality made him a valuable asset to our team.",
+      "mentorName": "Dr. Arun Kumar",
+      "mentorDesignation": "Senior Technical Lead",
+      "issueDate": "2024-09-05",
+      "verified": true
+    },
+    "ENTR2024002": {
+      "certificateId": "ENTR2024002",
+      "studentName": "Priya Patel",
+      "college": "National Institute of Technology, Jaipur",
+      "role": "UI/UX Design Intern",
+      "startDate": "2024-07-01",
+      "endDate": "2024-09-30",
+      "duration": "3 months",
+      "skills": ["Figma", "Adobe XD", "User Research", "Prototyping"],
+      "projectName": "Healthcare App Redesign",
+      "projectClient": "HealthTech Solutions",
+      "performanceRating": 5,
+      "feedback": "Priya brought fresh perspectives to our design team. Her user-centric approach and attention to detail resulted in a 40% improvement in user engagement metrics. She effectively collaborated with developers and stakeholders throughout the project lifecycle.",
+      "mentorName": "Sarah Johnson",
+      "mentorDesignation": "Head of Design",
+      "issueDate": "2024-10-05",
+      "verified": true
+    },
+    "ENTR2024003": {
+      "certificateId": "ENTR2024003",
+      "studentName": "Amit Singh",
+      "college": "Birla Institute of Technology and Science, Pilani",
+      "role": "Data Science Intern",
+      "startDate": "2024-05-15",
+      "endDate": "2024-08-15",
+      "duration": "3 months",
+      "skills": ["Python", "Machine Learning", "TensorFlow", "Data Analysis"],
+      "projectName": "Predictive Analytics Dashboard",
+      "projectClient": "FinTech Innovations",
+      "performanceRating": 4,
+      "feedback": "Amit showed strong analytical skills and quickly adapted to our tech stack. He independently developed machine learning models that improved prediction accuracy by 25%. His documentation and presentation skills were commendable.",
+      "mentorName": "Prof. Rajesh Gupta",
+      "mentorDesignation": "Data Science Manager",
+      "issueDate": "2024-08-20",
+      "verified": true
+    }
+  }
+}
