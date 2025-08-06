@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://entreship.github.io/entre-website/",
+  "homepage": "https://entreship.in",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
