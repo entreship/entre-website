@@ -69,11 +69,11 @@ const HeroSection: React.FC = () => {
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-space font-bold mb-6">
               <AnimatedText 
-                text="The Complete Ecosystem for" 
+                text="Find Co-founders, Build Projects," 
                 className="text-white mb-2"
               />
               <AnimatedText 
-                text="Builders, Dreamers & Achievers" 
+                text="Land Dream Jobs - All In One" 
                 className="gradient-text"
                 gradient={true}
                 delay={0.3}
@@ -86,8 +86,8 @@ const HeroSection: React.FC = () => {
               transition={{ delay: 0.6 }}
               className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed"
             >
-              From finding co-founders to landing dream jobs - build, collaborate, 
-              and grow your career in one unified platform
+              A revolutionary ecosystem connecting founders, students, and employers through 
+              four integrated platforms - all working together to accelerate success.
             </motion.p>
 
             <motion.div
@@ -101,14 +101,14 @@ const HeroSection: React.FC = () => {
                 size="lg"
                 icon={<ArrowRight className="w-5 h-5" />}
               >
-                Join 10,000+ Builders
+                Explore Our Ecosystem
               </GradientButton>
               <GradientButton
                 href="#how-it-works"
                 variant="outline"
                 size="lg"
               >
-                See How It Works
+                Learn How It Works
               </GradientButton>
             </motion.div>
 
@@ -120,16 +120,16 @@ const HeroSection: React.FC = () => {
               className="mt-12 flex items-center gap-8 justify-center lg:justify-start"
             >
               <div className="text-center">
-                <p className="text-2xl font-bold gradient-text">500+</p>
-                <p className="text-sm text-gray-400">Successful Matches</p>
+                <p className="text-2xl font-bold gradient-text">3x</p>
+                <p className="text-sm text-gray-400">Higher Success Rate</p>
               </div>
               <div className="text-center">
-                <p className="text-2xl font-bold gradient-text">2000+</p>
-                <p className="text-sm text-gray-400">Active Projects</p>
+                <p className="text-2xl font-bold gradient-text">40%</p>
+                <p className="text-sm text-gray-400">Less Hiring Cost</p>
               </div>
               <div className="text-center">
-                <p className="text-2xl font-bold gradient-text">85%</p>
-                <p className="text-sm text-gray-400">Placement Rate</p>
+                <p className="text-2xl font-bold gradient-text">2x</p>
+                <p className="text-sm text-gray-400">Faster Matching</p>
               </div>
             </motion.div>
           </motion.div>
@@ -157,10 +157,10 @@ const HeroSection: React.FC = () => {
                   }
                 }}
                 className={`absolute ${
-                  index === 0 ? 'top-0 left-0' :
-                  index === 1 ? 'top-0 right-0' :
-                  index === 2 ? 'bottom-0 left-0' :
-                  'bottom-0 right-0'
+                  index === 0 ? 'top-20 left-20' :
+                  index === 1 ? 'top-20 right-20' :
+                  index === 2 ? 'bottom-20 left-20' :
+                  'bottom-20 right-20'
                 }`}
               >
                 <div className="floating-card group relative overflow-hidden">

@@ -18,11 +18,11 @@ const EcosystemShowcase: React.FC = () => {
       subtitle: "Find Your Perfect Match",
       icon: <Rocket className="w-6 h-6" />,
       color: "from-primary-600 to-primary-500",
-      stats: "500+ successful matches",
+      stats: "2x more accurate than competitors",
       features: [
-        { icon: <Activity className="w-4 h-4" />, text: "AI-powered matching algorithm" },
-        { icon: <MessageSquare className="w-4 h-4" />, text: "Live social feed & discussions" },
-        { icon: <Users className="w-4 h-4" />, text: "Verified founder profiles" }
+        { icon: <Activity className="w-4 h-4" />, text: "15-point compatibility AI matching" },
+        { icon: <MessageSquare className="w-4 h-4" />, text: "Real-time collaboration workspace" },
+        { icon: <Users className="w-4 h-4" />, text: "Background-verified founders only" }
       ],
       preview: (
         <div className="space-y-3">
@@ -54,11 +54,11 @@ const EcosystemShowcase: React.FC = () => {
       subtitle: "Real Projects, Real Experience",
       icon: <Briefcase className="w-6 h-6" />,
       color: "from-accent-cyan to-accent-blue",
-      stats: "2000+ active projects",
+      stats: "85% placement within 30 days",
       features: [
-        { icon: <Globe className="w-4 h-4" />, text: "Global project opportunities" },
-        { icon: <Award className="w-4 h-4" />, text: "Skill-based matching" },
-        { icon: <Activity className="w-4 h-4" />, text: "Real-time application tracking" }
+        { icon: <Globe className="w-4 h-4" />, text: "Exclusive Fortune 500 partnerships" },
+        { icon: <Award className="w-4 h-4" />, text: "Pre-vetted, paid opportunities only" },
+        { icon: <Activity className="w-4 h-4" />, text: "Guaranteed mentor support" }
       ],
       preview: (
         <div className="grid grid-cols-2 gap-2">
@@ -78,11 +78,11 @@ const EcosystemShowcase: React.FC = () => {
       subtitle: "Showcase Your Journey",
       icon: <Award className="w-6 h-6" />,
       color: "from-accent-yellow to-accent-mint",
-      stats: "portfolio.entreship.in/you",
+      stats: "100% free custom domains",
       features: [
-        { icon: <Globe className="w-4 h-4" />, text: "Custom domain for everyone" },
-        { icon: <Award className="w-4 h-4" />, text: "Achievement badges & certificates" },
-        { icon: <Activity className="w-4 h-4" />, text: "Project showcases with metrics" }
+        { icon: <Globe className="w-4 h-4" />, text: "SEO-optimized personal brand site" },
+        { icon: <Award className="w-4 h-4" />, text: "Blockchain-verified achievements" },
+        { icon: <Activity className="w-4 h-4" />, text: "Live GitHub & project integrations" }
       ],
       preview: (
         <div className="space-y-3">
@@ -109,9 +109,9 @@ const EcosystemShowcase: React.FC = () => {
       subtitle: "Get Discovered by Top Companies",
       icon: <Users className="w-6 h-6" />,
       color: "from-primary-400 to-primary-500",
-      stats: "Hired by Google, Microsoft, startups",
+      stats: "50% faster hiring process",
       features: [
-        { icon: <Users className="w-4 h-4" />, text: "Direct employer connections" },
+        { icon: <Users className="w-4 h-4" />, text: "Skip 3 interview rounds with verified skills" },
         { icon: <Activity className="w-4 h-4" />, text: "Skills-first hiring approach" },
         { icon: <Award className="w-4 h-4" />, text: "Verified work experience" }
       ],
@@ -149,7 +149,8 @@ const EcosystemShowcase: React.FC = () => {
             <span className="gradient-text">Ecosystem</span>
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Four powerful verticals working together to accelerate your journey
+            Four independent platforms, each with its own specialized features and pricing, 
+            all seamlessly integrated to multiply your success
           </p>
         </motion.div>
 

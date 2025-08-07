@@ -123,24 +123,24 @@ const HowItWorks: React.FC = () => {
                 className="text-center p-6 rounded-xl hover:bg-white/5 transition-colors"
               >
                 <div className="text-4xl mb-3">🔍</div>
-                <h4 className="font-semibold mb-2">Browse Talent</h4>
-                <p className="text-sm text-gray-400">Access verified profiles with real project experience</p>
+                <h4 className="font-semibold mb-2">Reduce Hiring Costs by 40%</h4>
+                <p className="text-sm text-gray-400">Pre-vetted candidates eliminate 3+ interview rounds</p>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="text-center p-6 rounded-xl hover:bg-white/5 transition-colors"
               >
                 <div className="text-4xl mb-3">📊</div>
-                <h4 className="font-semibold mb-2">View Live Portfolios</h4>
-                <p className="text-sm text-gray-400">See actual work and contributions in real-time</p>
+                <h4 className="font-semibold mb-2">Cut Onboarding Time by 50%</h4>
+                <p className="text-sm text-gray-400">Candidates arrive with proven project experience</p>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="text-center p-6 rounded-xl hover:bg-white/5 transition-colors"
               >
                 <div className="text-4xl mb-3">🎯</div>
-                <h4 className="font-semibold mb-2">Direct Hire</h4>
-                <p className="text-sm text-gray-400">Connect instantly with pre-vetted candidates</p>
+                <h4 className="font-semibold mb-2">Fill Roles 3x Faster</h4>
+                <p className="text-sm text-gray-400">Direct access to 10,000+ active, verified builders</p>
               </motion.div>
             </div>
           </div>

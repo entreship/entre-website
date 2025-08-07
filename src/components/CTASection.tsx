@@ -144,19 +144,21 @@ const CTASection: React.FC = () => {
               className={`${!selectedPath ? 'opacity-50 cursor-not-allowed' : ''}`}
               icon={<ArrowRight className="w-5 h-5" />}
             >
-              {selectedPath ? `Start as ${selectedPath === 'founder' ? 'Founder' : selectedPath === 'student' ? 'Student' : 'Employer'}` : 'Select Your Path First'}
+              {selectedPath ? `Explore ${selectedPath === 'founder' ? 'Founder' : selectedPath === 'student' ? 'Student' : 'Employer'} Platform` : 'Select Your Path First'}
             </GradientButton>
 
             {/* Trust indicators */}
-            <div className="flex items-center gap-6 text-sm text-gray-400">
-              <span className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                2,341 online now
-              </span>
-              <span>•</span>
-              <span>Free to start</span>
-              <span>•</span>
-              <span>No credit card required</span>
+            <div className="flex flex-col items-center gap-3">
+              <div className="flex items-center gap-6 text-sm text-gray-400">
+                <span className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                  10,000+ active users
+                </span>
+                <span>•</span>
+                <span className="text-accent-cyan">Growing daily</span>
+                <span>•</span>
+                <span>Join the ecosystem</span>
+              </div>
             </div>
           </div>
         </motion.div>

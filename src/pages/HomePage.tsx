@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
+import WhyNow from '../components/WhyNow'
 import HowItWorks from '../components/HowItWorks'
 import EcosystemShowcase from '../components/EcosystemShowcase'
 import MetricsSection from '../components/MetricsSection'
@@ -18,6 +19,7 @@ const HomePage: React.FC = () => {
         <div id="home">
           <HeroSection />
         </div>
+        <WhyNow />
         <HowItWorks />
         <EcosystemShowcase />
         <MetricsSection />

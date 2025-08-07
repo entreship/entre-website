@@ -151,15 +151,16 @@ const TestimonialsSection: React.FC = () => {
           transition={{ delay: 0.8 }}
           className="text-center mt-12"
         >
-          <p className="text-gray-400 mb-4">Join thousands of success stories</p>
+          <p className="text-gray-400 mb-4">Be part of the next success story</p>
           <div className="flex justify-center gap-4">
-            <motion.button
+            <motion.a
+              href="#ecosystem"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 rounded-full bg-gradient-primary text-white font-semibold"
+              className="px-6 py-3 rounded-full bg-gradient-primary text-white font-semibold inline-block"
             >
-              Start Your Journey
-            </motion.button>
+              Explore Our Platforms
+            </motion.a>
           </div>
         </motion.div>
       </div>

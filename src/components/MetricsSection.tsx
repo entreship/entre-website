@@ -13,29 +13,29 @@ const MetricsSection: React.FC = () => {
     {
       value: 10000,
       suffix: '+',
-      label: 'Active Users',
-      description: 'Building their dreams',
+      label: 'Active Builders',
+      description: '3x more likely to succeed than solo founders',
       color: 'from-primary-600 to-primary-500'
-    },
-    {
-      value: 500,
-      suffix: '+',
-      label: 'Successful Startups',
-      description: 'Launched & funded',
-      color: 'from-accent-cyan to-accent-blue'
     },
     {
       value: 85,
       suffix: '%',
-      label: 'Placement Rate',
-      description: 'Landing dream jobs',
+      label: 'Get Hired in 30 Days',
+      description: 'vs 12% on traditional job boards',
+      color: 'from-accent-cyan to-accent-blue'
+    },
+    {
+      value: 500,
+      suffix: 'K',
+      label: 'Average Funding Raised',
+      description: 'Within 6 months of matching',
       color: 'from-accent-yellow to-accent-mint'
     },
     {
-      value: 3,
-      suffix: 'x',
-      label: 'Career Growth',
-      description: 'Average salary increase',
+      value: 40,
+      suffix: '%',
+      label: 'Higher Starting Salaries',
+      description: 'Thanks to verified project experience',
       color: 'from-primary-400 to-primary-500'
     }
   ]
